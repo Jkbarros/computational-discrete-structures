@@ -1,19 +1,30 @@
 # Project 2 — Dijkstra shortest paths
 
 **Author:** Julio Barros  
-**Source:** `Project 2/Project 2/DijkstraExample.java`
+**Source:** [`Project 2/Project 2/DijkstraExample.java`](../Project%202/Project%202/DijkstraExample.java)
 
-Classic **Dijkstra** implementation on an **adjacency matrix** with **9 vertices**. Non-edges are encoded as `-1`; edge weights are positive integers.
+Classic **Dijkstra** on an **adjacency matrix** with **9 vertices** (`totalVertex = 9`). Missing edges use weight **`-1`**; relax only when `graph[ux][vx] != -1`.
 
 ## Algorithm sketch
 
-1. Initialize distances to ∞, source distance `0`.
-2. Repeat `n-1` times: pick the unvisited vertex with minimum distance, mark visited, relax neighbors.
-3. Print shortest distances from source vertex `0`.
+1. Initialize `distance[]` to ∞, `spSet[]` to false; `distance[source] = 0`.
+2. Repeat `n - 1` times: pick unvisited `ux` with minimum distance, mark visited.
+3. For each neighbor `vx`, if edge exists and path improves, update `distance[vx]`.
+4. `printSolution` lists shortest distances from source **0**.
 
-## Graph
+## Embedded graph (excerpt)
 
-The `main` method embeds a fixed 9×9 weight matrix (undirected-style weights on selected pairs). Running the program prints lines such as:
+```java
+int grph[][] = new int[][] {
+    { -1, 3, -1, -1, -1, -1, -1, 7, -1 },
+    { 3, -1, 7, -1, -1, -1, -1, 10, 4 },
+    { -1, 7, -1, 6, -1, 2, -1, -1, 1 },
+    // ... 9x9 total; see source file
+};
+obj.dijkstra(grph, 0);
+```
+
+## Sample output
 
 ```text
 The shortest Distance from source 0th node to all other nodes are:
@@ -22,6 +33,6 @@ To 1 the shortest distance is: 3
 ...
 ```
 
-## Why adjacency matrix here
+## Implementation note
 
-The course emphasized matrix representations for small dense graphs. For sparse production graphs you would prefer adjacency lists and a priority queue — same algorithm, better scaling.
+`minimumDistance` scans all vertices each iteration (no priority queue). That matches the course emphasis on matrix representations for small dense graphs; for large sparse graphs you would use a heap and adjacency lists.

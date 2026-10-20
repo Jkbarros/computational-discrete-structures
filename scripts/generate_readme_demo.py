@@ -43,7 +43,7 @@ def draw_graph(draw, ox, oy, highlight_edge=None):
 def frame(step: int) -> Image.Image:
     img = Image.new("RGB", (W, H), (18, 22, 32))
     d = ImageDraw.Draw(img)
-    d.text((24, 16), "COSC 314 — Relations & shortest paths", fill=(226, 232, 240), font=font(20))
+    d.text((24, 16), "COSC 314 - Relations & shortest paths", fill=(226, 232, 240), font=font(20))
     d.text((24, 52), "Project 1: matrix properties", fill=(148, 163, 184), font=font(13))
     active = [(0, 0), (0, 1), (1, 0), (2, 2)][step % 4]
     draw_matrix(d, 24, 78, 22, active=active)
