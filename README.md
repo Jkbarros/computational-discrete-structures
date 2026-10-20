@@ -12,6 +12,7 @@ Java projects on **relations** (adjacency matrices) and **Dijkstra’s algorithm
 |------|-------------|
 | [Project 1 - `Relation.java`](Project%201/Project%201/Relation.java) | Read a relation matrix from file; test reflexive, anti-reflexive, symmetric, antisymmetric, transitive |
 | [Project 2 - `DijkstraExample.java`](Project%202/Project%202/DijkstraExample.java) | Shortest paths from node 0 on a 9-vertex weighted graph |
+| [Archive index](docs/archive-index.md) | Catalog of files in `archive/` with direct links |
 | [`archive/course-materials/`](archive/course-materials/) | Homework PDFs and class notes from Canvas |
 
 ## Topics covered
