@@ -1,6 +1,6 @@
-# COSC 314 — Computational Discrete Structures
+# COSC 314 - Computational Discrete Structures
 
-College coursework portfolio for **COSC 314 — Computational Discrete Structures** at Eastern Michigan University.  
+College coursework portfolio for **COSC 314 - Computational Discrete Structures** at Eastern Michigan University.  
 Java projects on **relations** (adjacency matrices) and **Dijkstra’s algorithm** for shortest paths.
 
 **Author:** [Julio Barros](https://github.com/Jkbarros)  
@@ -10,8 +10,8 @@ Java projects on **relations** (adjacency matrices) and **Dijkstra’s algorithm
 
 | Area | Description |
 |------|-------------|
-| [Project 1 — `Relation.java`](Project%201/Project%201/Relation.java) | Read a relation matrix from file; test reflexive, anti-reflexive, symmetric, antisymmetric, transitive |
-| [Project 2 — `DijkstraExample.java`](Project%202/Project%202/DijkstraExample.java) | Shortest paths from node 0 on a 9-vertex weighted graph |
+| [Project 1 - `Relation.java`](Project%201/Project%201/Relation.java) | Read a relation matrix from file; test reflexive, anti-reflexive, symmetric, antisymmetric, transitive |
+| [Project 2 - `DijkstraExample.java`](Project%202/Project%202/DijkstraExample.java) | Shortest paths from node 0 on a 9-vertex weighted graph |
 | [`archive/course-materials/`](archive/course-materials/) | Homework PDFs and class notes from Canvas |
 
 ## Topics covered
@@ -27,15 +27,15 @@ flowchart LR
 
 ## Run the Java projects
 
-### Option A — BlueJ (course default)
+### Option A - BlueJ (course default)
 
 1. Install [BlueJ](https://bluej.org/).
 2. Open **`Project 1/Project 1`** or **`Project 2/Project 2`** as a BlueJ project (`package.bluej` is included).
 3. Compile and run `Relation` or `DijkstraExample` from the BlueJ UI.
 
-### Option B — Command line
+### Option B - Command line
 
-**Project 1** (expects a matrix input file in the working directory — see `Relation.java`):
+**Project 1** (expects a matrix input file in the working directory - see `Relation.java`):
 
 ```bash
 cd "Project 1/Project 1"
@@ -55,8 +55,8 @@ java DijkstraExample
 
 | Course | Link |
 |--------|------|
-| COSC 381 — Software Engineering | [software-engineering-solutions](https://github.com/Jkbarros/software-engineering-solutions) |
-| IA 103 — Information Security | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
+| COSC 381 - Software Engineering | [software-engineering-solutions](https://github.com/Jkbarros/software-engineering-solutions) |
+| IA 103 - Information Security | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
 
 ## Notes for readers
 
