@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Relation
+comment1.params=mat\ n
+comment1.target=java.lang.Boolean\ isReflexive(int[][],\ int)
+comment2.params=mat\ n
+comment2.target=java.lang.Boolean\ isAntiReflexive(int[][],\ int)
+comment3.params=mat\ n
+comment3.target=java.lang.Boolean\ isSymmetric(int[][],\ int)
+comment4.params=mat\ n
+comment4.target=java.lang.Boolean\ isAntiSymmetric(int[][],\ int)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
